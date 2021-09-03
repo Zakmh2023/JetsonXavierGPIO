@@ -37,6 +37,10 @@
 #ifndef JETSONGPIO_H_
 #define JETSONGPIO_H_
 
+#ifdef __cplusplus
+extern "C" {
+    #endif
+
  /****************************************************************
  * Constants
  ****************************************************************/
@@ -91,6 +95,8 @@ int gpioOpen ( jetsonGPIO gpio ) ;
 int gpioClose ( int fileDescriptor ) ;
 int gpioActiveLow ( jetsonGPIO gpio, unsigned int value ) ;
 
-
+    #ifdef __cplusplus
+    }
+#endif
 
 #endif // JETSONGPIO_H_
